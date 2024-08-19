@@ -1,0 +1,88 @@
+/* otp.css */
+
+.otp__container {
+    display: flex;
+    height: 110vh;
+  }
+  
+  .otp__col1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+
+  .otp__logo {
+    width: 50px;
+    height: auto;
+    background: #00c853;
+    padding: 10px;
+  }
+  
+  .otp__header {
+    text-align: left;
+    width: 400px;
+  }
+  
+  .otp__company-name {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #00c853;
+  }
+  
+  .otp__title {
+    margin-bottom: 10px;
+    color: #00c853;
+  }
+  
+  .otp__description {
+    font-size: 16px;
+  }
+  
+  .otp__form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .otp__input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .otp__input {
+    width: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .otp__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00c853;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .otp__container {
+      flex-direction: column;
+    }
+  
+    .otp__col2 {
+      display: none;
+    }
+  }
+  

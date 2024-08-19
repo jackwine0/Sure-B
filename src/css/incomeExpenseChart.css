@@ -1,0 +1,42 @@
+/* incomeExpenseChart.css */
+
+/* Chart Container */
+.chart-containerx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  padding: 20px;
+  border: 2px solid #006d32;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-containerx:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltip Styling */
+.recharts-tooltip-wrapperx {
+  background-color: #006d32;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+/* XAxis and YAxis Styling */
+.recharts-cartesian-axis-tickx text {
+  fill: #006d32;
+  font-size: 12px;
+}
+
+/* Bar Styling */
+.recharts-bar-rectanglex {
+  stroke: none;
+  transition: transform 0.2s ease;
+}
+
+

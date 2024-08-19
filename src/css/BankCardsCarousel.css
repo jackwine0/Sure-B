@@ -1,0 +1,55 @@
+/* src/css/BankCardsCarousel.css */
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure overflow is hidden to only show one card at a time */
+}
+
+.gallery-cell {
+  width: 100%; /* Adjust to the width of the parent container */
+  margin: 0 auto; /* Centering the card within the carousel */
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /* Ensure cards don't have extra spacing */
+}
+
+.gallery-cell:not(:last-child) {
+  margin-right: 0; /* No extra margin between cells */
+}
+
+.bank-card {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bank card details */
+.bank-card .card-number {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bank-card .name {
+  font-size: 12px;
+}
+
+.bank-card .expiry-date {
+  font-size: 10px;
+  color: #666;
+}
+
+.bank-card .bank-name {
+  font-size: 12px;
+  font-weight: bold;
+}

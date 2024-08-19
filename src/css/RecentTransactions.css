@@ -1,0 +1,208 @@
+/* RECENT TRANSACTIONS */
+.recent-transactions{
+  margin-right: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-all-button {
+  background-color: #006d32;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bank-tabs {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.bank-tab {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.bank-tab:hover {
+  color: #006d32;
+}
+
+.bank-tab.active {
+  color: #1D5152;
+  font-weight: bold;
+}
+
+.bank-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #1D5152;
+}
+
+.bank-info {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.bank-profile {
+  background: linear-gradient(135deg, #006d32, #00c853);
+  display: flex;
+  color: #fff;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bank-avatar {
+  background-color: #a5d6a7;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.bank-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+.bank-amount p {
+  font-size: 20px;
+  color: white;
+}
+
+.account-type {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin-left: auto;
+}
+
+.transactions-table {
+  overflow-x: auto;
+}
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.transactions-table th {
+  background-color: #ddd;
+}
+
+.transaction-avatar {
+  background-color: #a5d6a7;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.transaction-table-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.transaction-table-row:hover {
+  background-color: #f5f5f5;
+}
+
+.transaction-status {
+  font-weight: bold;
+}
+
+.status-paid {
+  color: #00c853;
+}
+
+.status-pending {
+  color: #f57f17;
+}
+
+.status-failed {
+  color: #d32f2f;
+}
+
+
+.view-all-button{
+  background-color: #fff;
+  color: #000;
+  width: 100px;
+  border: 2px solid #ddd;
+}
+
+
+.view-all-button:hover{
+  background: linear-gradient(135deg, #006d32, #00c853);
+color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bank-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bank-avatar {
+    margin-bottom: 10px;
+  }
+
+  .bank-details {
+    margin-left: 0;
+  }
+
+  /* Responsive styles */
+
+
+
+@media only screen and (max-width: 480px) {
+  .bank-profile {
+    width: 100%;
+  }
+ 
+}
+}

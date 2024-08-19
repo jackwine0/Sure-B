@@ -1,0 +1,59 @@
+/* src/components/BankCard.css */
+
+.bank-card {
+  background: linear-gradient(135deg, #006d32, #00c853);
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+  height: 180px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+
+.bank-name {
+  font-weight: bold;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-holder-name,
+.expiry-date {
+  font-size: 12px;
+}
+
+.card-number {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}

@@ -1,0 +1,144 @@
+/* src/pages/MyBankAccounts.css */
+
+.my-bank-accounts {
+    padding: 20px;
+  }
+  
+  .welcome {
+    margin-bottom: 20px;
+  }
+  
+  .welcome h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .welcome p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .spending-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .spending-text {
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .amount-spent {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    background-color: #00c853;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .add-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+  }
+  
+  .add-card-box {
+    background-color: #f5faff;
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: #00c853;
+    font-size: 50px;
+  }
+  
+  .add-icon {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00c853;
+  }
+  
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal h3 {
+    margin-top: 0;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .modal-buttons button:first-child {
+    background-color: #00c853;
+    color: white;
+  }
+  
+  .modal-buttons button:last-child {
+    background-color: #f5faff;
+    color: #333;
+  }
+  

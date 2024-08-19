@@ -1,0 +1,35 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-content {
+  flex: 1;
+}
+
+.welcome {
+  margin-bottom: 20px;
+}
+
+.balance-section,
+.transactions-section {
+  margin-bottom: 30px;
+}
+
+.profile-sidebar {
+  width: 300px;
+  transition: width 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+   display: none;
+  }
+}

@@ -1,0 +1,48 @@
+.payment-transfer__section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.payment-transfer__section-subtitle {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.payment-transfer__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-transfer__label {
+  font-size: 14px;
+  color: #666666;
+  flex: 1; /* Allow the label to take up available space */
+}
+
+.payment-transfer__input,
+.payment-transfer__select,
+.payment-transfer__textarea {
+  flex: 2; /* Adjusts input size relative to label */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 200px;
+}
+
+.payment-transfer__textarea {
+  height: 100px;
+  resize: none;
+  flex: 2;
+}
+
+.payment-transfer__button{
+  width: 855px;
+}
+
+

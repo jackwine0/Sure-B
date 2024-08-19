@@ -1,0 +1,102 @@
+.budget-container {
+  border-radius: 10px;
+}
+
+.budget-header {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  margin-bottom: 20px;
+}
+
+.budget-header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.budget-header p {
+  font-size: 18px;
+}
+
+.add-budget-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.add-budget-button:hover{
+  background: linear-gradient(135deg, #006d32, #00c853);
+color: #fff;
+}
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content select, .popup-content input[type="text"], .popup-content input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.popup-content button[type="button"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+.close-popup {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  background-color: #ddd;
+}
+
+.budgets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.budgets-grid > * {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

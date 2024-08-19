@@ -1,0 +1,115 @@
+/* index.css */
+
+/* Reset some default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* A popular web font for a clean, modern look */
+  background-color: #f5f5f5; /* Light gray background for content */
+  color: #333; /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Ensures the container spans the full height */
+}
+
+.content {
+  margin-left: 250px; /* The width of the sidebar */
+  padding: 20px; /* Padding around the content */
+  width: calc(100% - 250px); /* Remaining width of the viewport */
+  background-color: #ffffff; /* White background for content area */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+/* Buttons */
+button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: white;
+  color: #00c853;
+  border: 1px solid #00c853;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .content {
+    margin-left: 90px; /* The width of the sidebar */
+    padding: 20px; /* Padding around the content */
+    width: calc(100% - 90px); /* Remaining width of the viewport */
+    background-color: #ffffff; /* White background for content area */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+
+  
+  .company-name,
+  .nav-text,
+  .user-name,
+  .user-email {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+  }
+
+  .sidebar-footer {
+    flex-direction: column;
+  }
+
+  .user-info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+ 
+  .search-bar {
+    justify-content: center;
+  }
+
+  .search-input {
+    display: none;
+  }
+}
+
