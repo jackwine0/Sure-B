@@ -9,7 +9,6 @@ const ConfirmPassword = () => {
   });
 
   const [showPopup, setShowPopup] = useState(false);
-
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -27,13 +26,9 @@ const ConfirmPassword = () => {
       return;
     }
 
-    // Handle password change logic here
     console.log("Password changed:", formData.newPassword);
-
-    // Show confirmation popup
     setShowPopup(true);
 
-    // Navigate to sign-in page after 2 seconds
     setTimeout(() => {
       navigate("/signin");
     }, 2000);

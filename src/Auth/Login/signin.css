@@ -1,5 +1,6 @@
 .signin-container {
   display: flex;
+  flex-direction: row;
   height: 100vh;
 }
 
@@ -15,6 +16,8 @@
 
 .signin-header {
   text-align: left;
+  width: 100%;
+  max-width: 400px;
 }
 
 .signin-logo {
@@ -43,7 +46,8 @@
 }
 
 form {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .form-group {
@@ -51,7 +55,6 @@ form {
   flex-direction: column;
   margin-bottom: 15px;
   width: 100%;
-  max-width: 150%;
 }
 
 label {
@@ -160,6 +163,7 @@ input[type="password"] {
   }
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .signin-container {
     flex-direction: column;
@@ -167,5 +171,59 @@ input[type="password"] {
 
   .signin-image {
     display: none;
+  }
+
+  .signin-form {
+    padding: 15px;
+  }
+
+  .signin-header h2 {
+    font-size: 22px;
+  }
+
+  .signin-header p {
+    font-size: 14px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .spinner {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-logo {
+    width: 40px;
+  }
+
+  .signin-header span {
+    font-size: 20px;
+  }
+
+  .signin-header h2 {
+    font-size: 20px;
+  }
+
+  .signin-header p {
+    font-size: 12px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .signup-prompt {
+    font-size: 12px;
+  }
+
+  .forgot-link {
+    font-size: 12px;
   }
 }

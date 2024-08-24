@@ -30,57 +30,55 @@ const Signin = () => {
   return (
     <div className="signin-container">
       <div className="signin-form">
-        <div>
-          <header className="signin-header">
-            <img
-              src="https://res.cloudinary.com/duicyr28v/image/upload/v1721168513/surebanker_logo_aoy8rn.svg"
-              alt="SureBanker Logo"
-              className="signin-logo"
+        <header className="signin-header">
+          <img
+            src="https://res.cloudinary.com/duicyr28v/image/upload/v1721168513/surebanker_logo_aoy8rn.svg"
+            alt="SureBanker Logo"
+            className="signin-logo"
+          />
+          <span>SureBanker</span>
+          <h2>Sign in</h2>
+          <p>Welcome back! Please enter your details.</p>
+        </header>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter email"
+              value={formData.email}
+              onChange={handleChange}
+              required
             />
-            <span>SureBanker</span>
-            <h2>Sign in</h2>
-            <p>Welcome back! Please enter your details.</p>
-          </header>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Enter email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                placeholder="Enter password"
-                value={formData.password}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <button type="submit" className="x">
-              Sign in
-            </button>
-          </form>
-          <div className="xx">
-            <div className="signup-prompt">
-              Don't have an account?{" "}
-              <span onClick={handleSignupNavigation}>
-                <strong>Sign up</strong>
-              </span>
-            </div>
-            <a href="/forgot-password" className="forgot-link">
-              <strong>Forgot your password?</strong>
-            </a>
           </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button type="submit" className="x">
+            Sign in
+          </button>
+        </form>
+        <div className="xx">
+          <div className="signup-prompt">
+            Don't have an account?{" "}
+            <span onClick={handleSignupNavigation}>
+              <strong>Sign up</strong>
+            </span>
+          </div>
+          <a href="/forgot-password" className="forgot-link">
+            <strong>Forgot your password?</strong>
+          </a>
         </div>
       </div>
       <div className="signin-image">
